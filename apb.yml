@@ -1,3 +1,4 @@
+---
 ##################################################################
 # Shared Parameters
 ##################################################################
@@ -41,7 +42,7 @@ image: ansibleplaybookbundle/jenkins-apb
 description: Jenkins service with optional persistent storage and S2I build
 bindable: False
 async: optional
-metadata: 
+metadata:
   documentationUrl: https://docs.openshift.org/latest/using_images/other_images/jenkins.html
   dependencies: ['jenkins:latest']
   displayName: Jenkins (APB)

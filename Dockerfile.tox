@@ -1,0 +1,13 @@
+FROM fedora:26
+
+
+RUN mkdir -p /home/apb/project/ && \
+    dnf install npm python2-tox python3-tox make gcc autoconf openssl-devel redhat-rpm-config -y ; \
+    npm install -g dockerfile_lint && \
+    dnf clean all
+
+COPY . /home/apb/project/
+WORKDIR /home/apb/project/
+
+
+CMD tox

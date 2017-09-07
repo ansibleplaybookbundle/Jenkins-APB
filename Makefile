@@ -23,6 +23,10 @@ lint:
 	dockerfile_lint -f Dockerfile
 #	dockerfile_lint -f Dockerfile.rhel7
 
+ansible-test:
+	docker build -t ${IMAGE_NAME}-test -f Dockerfile.tox .
+	docker run --rm -it ${IMAGE_NAME}-test
+
 openshift-test:
 	$(eval PROJ_RANDOM=test-$(shell shuf -i 100000-999999 -n 1))
 	oc login --token=${OC_PASS}
