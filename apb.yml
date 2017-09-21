@@ -47,6 +47,7 @@ metadata:
   displayName: Jenkins (APB)
   console.openshift.io/iconClass: icon-jenkins
   longDescription: This APB deploys a Jenkins server capable of managing OpenShift Pipeline builds and supporting OpenShift-based oauth login.
+  providerDisplayName: "Red Hat, Inc."
 plans:
   - name: default
     description: This plan deploys a single Jenkins server
