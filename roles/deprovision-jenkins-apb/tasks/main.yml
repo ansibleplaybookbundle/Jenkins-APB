@@ -51,4 +51,3 @@
     name: "{{ jenkins_service_name }}"
     namespace: "{{ namespace }}"
     state: "{{ state }}"
-

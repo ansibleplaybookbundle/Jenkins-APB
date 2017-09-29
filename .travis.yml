@@ -1,0 +1,20 @@
+---
+sudo: false
+
+cache:
+  - pip
+
+before_cache:
+  - rm ~/.cache/pip/log/debug.log
+
+language: python
+python:
+  - "2.7"
+
+install:
+  - pip install --upgrade pip
+  - pip install tox-travis coveralls
+  - mkdir -p /tmp/roles
+
+script:
+  - tox
