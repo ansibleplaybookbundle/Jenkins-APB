@@ -1,6 +1,8 @@
 jenkins-apb
 ======================
 
+[![Build Status](https://travis-ci.org/ansibleplaybookbundle/Jenkins-APB.svg?branch=master)](https://travis-ci.org/ansibleplaybookbundle/Jenkins-APB)
+
 ## What it does
 This APB deploys a Jenkins server capable of managing OpenShift Pipeline builds and supporting OpenShift-based
 oauth login.
