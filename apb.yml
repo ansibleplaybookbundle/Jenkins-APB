@@ -37,7 +37,7 @@ _p: &_p
     type: string
     title: JNLP Service Name
 ##################################################################
-version: 1.0
+version: 1.0.0
 name: jenkins-apb
 description: Jenkins service with optional persistent storage and S2I build
 bindable: False
